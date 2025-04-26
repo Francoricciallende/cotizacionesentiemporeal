@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercados en Vivo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mercados en Vivo</h1>
+    <nav>
+      <a href="#dolares">Dólar</a> |
+      <a href="#acciones-argentinas">Acciones Argentinas</a> |
+      <a href="#cedears">Cedears</a> |
+      <a href="#bonos">Bonos</a> |
+      <a href="#adr-usa">ADR USA</a> |
+      <a href="#acciones-usa">Acciones USA</a> |
+      <a href="#analisis-tecnico">Análisis Técnico</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Cotización Dólares -->
+    <section id="dolares" class="section">
+      <h2>Cotización Dólar en Vivo</h2>
+      <div class="cotizaciones">
+        <div id="dolar-mep" class="caja-cotizacion">Loading...</div>
+        <div id="dolar-ccl" class="caja-cotizacion">Loading...</div>
+      </div>
+    </section>
+
+    <!-- Acciones Argentinas -->
+    <section id="acciones-argentinas" class="section">
+      <h2>Acciones Argentinas en Vivo</h2>
+      <div class="grid-graficos">
+        <div class="grafico">
+          <input type="text" placeholder="Ticker" class="input-ticker">
+          <button class="buscar">Buscar</button>
+          <canvas id="grafico-arg1"></canvas>
+        </div>
+        <div class="grafico">
+          <input type="text" placeholder="Ticker" class="input-ticker">
+          <button class="buscar">Buscar</button>
+          <canvas id="grafico-arg2"></canvas>
+        </div>
+        <div class="grafico">
+          <input type="text" placeholder="Ticker" class="input-ticker">
+          <button class="buscar">Buscar</button>
+          <canvas id="grafico-arg3"></canvas>
+        </div>
+        <div class="grafico">
+          <input type="text" placeholder="Ticker" class="input-ticker">
+          <button class="buscar">Buscar</button>
+          <canvas id="grafico-arg4"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cedears -->
+    <section id="cedears" class="section">
+        <h2>Cotización Cedears en Vivo</h2>
+        <div class="grid-graficos">
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-cedear1"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-cedear2"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-cedear3"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-cedear4"></canvas>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Bonos -->
+      <section id="bonos" class="section">
+        <h2>Cotización Bonos en Vivo</h2>
+        <div class="grid-graficos">
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-bono1"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-bono2"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-bono3"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-bono4"></canvas>
+          </div>
+        </div>
+      </section>
+  
+      <!-- ADR USA -->
+      <section id="adr-usa" class="section">
+        <h2>Cotización ADRs USA en Vivo</h2>
+        <div class="grid-graficos">
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-adr1"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-adr2"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-adr3"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-adr4"></canvas>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Acciones USA -->
+      <section id="acciones-usa" class="section">
+        <h2>Cotización Acciones USA en Vivo</h2>
+        <div class="grid-graficos">
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-usa1"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-usa2"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-usa3"></canvas>
+          </div>
+          <div class="grafico">
+            <input type="text" placeholder="Ticker" class="input-ticker">
+            <button class="buscar">Buscar</button>
+            <canvas id="grafico-usa4"></canvas>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Análisis Técnico -->
+      <section id="analisis-tecnico" class="section">
+        <h2>Análisis Técnico de Acciones y Bonos</h2>
+        <div class="analisis-tecnico">
+          <input id="input-tecnico-1" type="text" placeholder="Ticker 1">
+          <input id="input-tecnico-2" type="text" placeholder="Ticker 2">
+          <input id="input-tecnico-3" type="text" placeholder="Ticker 3">
+          <input id="input-tecnico-4" type="text" placeholder="Ticker 4">
+          
+          <div class="checkboxes">
+            <label><input type="checkbox" id="ema4"> EMA 4</label>
+            <label><input type="checkbox" id="ema9"> EMA 9</label>
+            <label><input type="checkbox" id="ema21"> EMA 21</label>
+            <label><input type="checkbox" id="ema30"> EMA 30</label>
+            <label><input type="checkbox" id="ema50"> EMA 50</label>
+            <label><input type="checkbox" id="ema200"> EMA 200</label>
+            <label><input type="checkbox" id="lsma30"> LSMA 30</label>
+          </div>
+  
+          <button id="analizar-tecnico">Analizar</button>
+  
+          <canvas id="grafico-tecnico"></canvas>
+        </div>
+      </section>
+  
+    </main>
+  
+    <footer>
+      <p>© 2025 Mercados en Vivo - Proyecto Profesional</p>
+    </footer>
+  
+    <!-- Librerías -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="js/app.js"></script>
+  
+  </body>
+  </html>

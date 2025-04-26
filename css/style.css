@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+nav a {
+  color: #ecf0f1;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+.section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #34495e;
+}
+
+/* Cotizaciones */
+.cotizaciones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caja-cotizacion {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  min-width: 200px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Grilla de gráficos */
+.grid-graficos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.grafico {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Inputs y Botones */
+.input-ticker {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.buscar {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buscar:hover {
+  background-color: #2980b9;
+}
+
+/* Análisis Técnico */
+.analisis-tecnico {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.analisis-tecnico input {
+  width: 22%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkboxes {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkboxes label {
+  background-color: #ecf0f1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkboxes input {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cotizaciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-ticker {
+    width: 90%;
+  }
+
+  .analisis-tecnico input {
+    width: 45%;
+  }
+}
